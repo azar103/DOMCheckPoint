@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="./css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap" rel="stylesheet">
+    <title>Shopping Cart</title>
+</head>
+<html>
+    <body>
+
+       <main>
+           <div class="items_container">
+                 <div class="item">
+                      <div class="price">
+                          <span>11</span>$
+                      </div>
+                      <img  src="./res/clothes_1.png" class="item_img"/>
+                      <div class="item_title">
+                          <p>blue T-Shirt</p>
+                      </div>
+                      <div class="item_footer">
+                        <i class="fa fa-heart fa-2x" aria-hidden="true" ></i>
+                        <i class="fa fa-shopping-cart fa-2x" style="color:royalblue"></i>
+                    </div>
+                 </div>
+                 <div class="item">
+                    <div class="price">
+                        <span>15</span>$
+                    </div>
+                    <img  src="./res/clothes_2.png" class="item_img"/>
+                    <div class="item_title">
+                        <p>red T-Shirt</p>
+                    </div>
+                    <div class="item_footer">
+                        <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
+                        <i class="fa fa-shopping-cart fa-2x" style="color:royalblue"></i>
+                    </div>
+                 </div>
+                 <div class="item">
+                    <div class="price">
+                        <span>18</span>$
+                    </div> 
+                    <img  src="./res/clothes_3.png" class="item_img"/>
+                    <div class="item_title">
+                        <p>dark blue T-Shirt</p>
+                    </div>
+                    <div class="item_footer">
+                        <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
+                        <i class="fa fa-shopping-cart fa-2x" style="color:royalblue"></i>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="price">
+                        <span>5</span>$
+                    </div>
+                    <img  src="./res/clothes_4.png" class="item_img"/>
+                    <div class="item_title">
+                        <p>green T-Shirt</p>
+                    </div>
+                    <div class="item_footer">
+                        <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
+                        <i class="fa fa-shopping-cart fa-2x" style="color:royalblue"></i>
+                    </div>
+                </div>
+           </div>
+
+           <div class="table_items_container">
+    
+            <table class="table table-condensed">
+                <thead>
+                  <tr>
+                    <th>item</th>
+                    <th>price</th>
+                    <th>quantity</th>
+                    <th>#</th>
+                  </tr>
+                </thead>
+                <tbody>
+          
+                </tbody>
+
+              </table>
+              <hr>
+              <h3>
+                <strong>Total</strong>: <span id="totalScore">0</span> $
+              </h3>
+
+
+           </div>
+       </main> 
+       <script src="./js/main.js" ></script>
+    </body>
+</html>

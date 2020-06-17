@@ -74,21 +74,15 @@ function manageItemsInCart(index){
         //add event to incement the quantity of items
         addButton.addEventListener('click', () => {
             quantity++
-            var result = quantity*parseInt(price)
-            secondCel.innerHTML= result+"$"
-            inputNumber.value=quantity            
-            updateTotalPrice()
+            calculPrice(quantity, price, secondCel, inputNumber)
         }  
 
         )
-        
+
         //add event to decrement the quantity of items
         subsButton.addEventListener('click', () => {
             quantity--
-            var result = quantity*parseInt(price)
-            secondCel.innerHTML= result+"$"
-            inputNumber.value=quantity            
-            updateTotalPrice()
+            calculPrice(quantity, price, secondCel, inputNumber)
         }  
 
         )
@@ -132,6 +126,13 @@ function manageItemsInCart(index){
           s+=parseInt(priceCel[i].innerHTML)
        }
      document.querySelector('#totalScore').innerHTML = s
+ }
+
+ function calculPrice(quantity, price, cel, input) {
+     var result = quantity*parseInt(price)
+      cel.innerHTML= result+"$"
+      input.value=quantity            
+       updateTotalPrice()
  }
 
 
